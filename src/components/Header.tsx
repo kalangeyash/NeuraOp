@@ -67,7 +67,8 @@ export function Header({ sidebarOpen, setSidebarOpen }: HeaderProps) {
                 size="icon"
                 onClick={() => setShowSearch(true)}
               >
-                <Search className="h-5 w-5" />
+                {/* <Search className="h-5 w-5 "/> */}
+                <p></p>
               </Button>
             )}
           </div>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion } from 'motion/react';
+// import { motion } from 'motion/react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
@@ -14,13 +14,13 @@ import {
   ArrowUp,
   Brain,
   CheckCircle2,
-  ChevronDown,
-  ChevronUp,
+  // ChevronDown,
+  // ChevronUp,
   CircleDollarSign,
   Clock,
   Cog,
   LineChart,
-  Loader2,
+  // Loader2,
   MessageSquare,
   Package,
   Percent,
@@ -35,7 +35,7 @@ import { ProductionChart } from '@/components/charts/ProductionChart';
 import { InventoryChart } from '@/components/charts/InventoryChart';
 import { FinancialChart } from '@/components/charts/FinancialChart';
 import { SalesChart } from '@/components/charts/SalesChart';
-import { AIInsightsCard } from '@/components/cards/AIInsightsCard';
+// import { AIInsightsCard } from '@/components/cards/AIInsightsCard';
 import { ChatAssistant } from '@/components/ChatAssistant';
 
 export default function Dashboard() {
@@ -43,7 +43,7 @@ export default function Dashboard() {
   const [showChat, setShowChat] = useState(false);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 w-[1550px] overflow-x-hidden ">
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div>
           <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
@@ -395,7 +395,7 @@ export default function Dashboard() {
                         <div className="font-medium">{material.name}</div>
                         <Badge 
                           variant={material.urgent ? "destructive" : "outline"}
-                          className={!material.urgent && "bg-amber-500/10 text-amber-500"}
+                          className={ "bg-amber-500/10 text-amber-500"}
                         >
                           {material.urgent ? "Critical" : "Low"}
                         </Badge>
@@ -975,7 +975,7 @@ export default function Dashboard() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <AIInsightsCard />
+                {/* <AIInsightsCard /> */}
               </CardContent>
             </Card>
             <Card>

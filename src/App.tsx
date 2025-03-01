@@ -16,7 +16,7 @@ function App() {
           <Sidebar open={sidebarOpen} onOpenChange={setSidebarOpen} />
           <div className="flex flex-col flex-1 w-full overflow-hidden">
             <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-            <main className={cn("flex-1 overflow-y-auto p-4 md:p-6", !sidebarOpen && "md:ml-16")}>
+            <main className={cn("flex-1  overflow-y-auto p-4 md:p-6", !sidebarOpen && "md:ml-16")}>
               <Dashboard />
             </main>
           </div>
